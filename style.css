@@ -1,3 +1,9 @@
-
+@import url(./font/stylesheet.css);
+body {
+  color: #1F1F1F;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

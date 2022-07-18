@@ -1,5 +1,8 @@
-$colorBlack: #1F1F1F;
-$colorWhite: #FFFFFF;
-$colorBlue: #2d64e6;
-$colorRed: #cd3d0f;
+@use "typography";  // ricordarsi di usare typography.$variabile
 
+body {
+    color: typography.$colorBlack;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
