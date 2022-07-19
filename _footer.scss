@@ -1,7 +1,39 @@
 @use "typography";
+footer a {
+    text-decoration: none;
+    color: typography.$colorWhite;
+}
 
 footer {
-    background-color: typography.$colorBlue;
+    background-color: typography.$colorFooter;
     width: 100%;
     height: 500px;
+    color: typography.$colorWhite;
+    &>div{
+        width: 100%;
+        padding: 100px;
+        display: grid;
+        grid-template-columns: repeat(6, 12%);
+        grid-template-rows: 200px, 150px;
+        .footer-left {
+            grid-column: 1 / 3;
+            grid-row: 1;
+            display: flex;
+            flex-direction: column;
+            .footer-ps-logo {
+                width: 100px;
+            }
+            .footer-lang{
+                display: inline-block;
+                padding: 35px;
+                position: relative;
+                left: 20px;
+                .footer-globe{
+                    width: 20px;
+                    position: absolute;
+                    left: 0px;
+                }
+            }   
+        }
+    }
 }
