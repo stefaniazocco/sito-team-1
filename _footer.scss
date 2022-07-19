@@ -1,0 +1,7 @@
+@use "typography";
+
+footer {
+    background-color: typography.$colorBlue;
+    width: 100%;
+    height: 500px;
+}

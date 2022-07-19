@@ -1,4 +1,5 @@
 @use "typography";  // ricordarsi di usare typography.$variabile
+@use "footer";
 
 body {
     color: typography.$colorBlack;
