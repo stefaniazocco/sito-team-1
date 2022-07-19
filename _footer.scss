@@ -7,16 +7,21 @@ footer a {
 footer {
     background-color: typography.$colorFooter;
     width: 100%;
-    height: 500px;
+    height: 550px;
     color: typography.$colorWhite;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &>div{
-        width: 100%;
-        padding: 100px;
+        width: 1350px;
         display: grid;
-        grid-template-columns: repeat(6, 12%);
-        grid-template-rows: 200px, 150px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr, 1fr;
+        padding: 75px 0px;
+
         .footer-left {
-            grid-column: 1 / 3;
+            grid-column: 1 / 4;
             grid-row: 1;
             display: flex;
             flex-direction: column;
@@ -25,15 +30,31 @@ footer {
             }
             .footer-lang{
                 display: inline-block;
-                padding: 35px;
+                padding: 35px 15px;
                 position: relative;
                 left: 20px;
                 .footer-globe{
                     width: 20px;
                     position: absolute;
-                    left: 0px;
+                    left: -20px;
                 }
             }   
+        }
+
+        .footer-bottom {
+            grid-column: 1 / 4;
+            grid-row: 2;
+            .footer-sie {
+                width: 150px;
+                display: block;
+                padding-bottom: 5px;
+            }
+            .footer-maggiori-info {
+                text-decoration: underline;
+            }
+        }
+        &>ul {
+            list-style: none;
         }
     }
 }
