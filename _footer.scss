@@ -1,9 +1,6 @@
 @use "typography";
-footer a {
-    text-decoration: none;
-    color: typography.$colorWhite;
-}
 
+//min-width 1367
 footer {
     background-color: typography.$colorFooter;
     width: 100%;
@@ -13,6 +10,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    & a {
+        text-decoration: none;
+        color: typography.$colorWhite;
+    }
     &>div{
         width: 1560px;
         display: grid;

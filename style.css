@@ -1,9 +1,4 @@
 @import url(./font/stylesheet.css);
-footer a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
 footer {
   background-color: #00439C;
   width: 100%;
@@ -13,6 +8,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 footer > div {
   width: 1560px;
@@ -116,7 +115,63 @@ body {
   font-family: "SST";
 }
 
-/*------------SOCIAL MEDIA--------------*/
+/*------------------STORE------------------*/
+/*max-width 365px*/
+.store-section {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.store-section .store-section-bg {
+  width: 100%;
+  position: relative;
+}
+.store-section .store-section-content {
+  position: absolute;
+  z-index: 1;
+  margin: 20px;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+.store-section .store-section-content .store-content-title img {
+  width: 100px;
+}
+.store-section .store-section-content .store-content-title h2 {
+  font-size: 29px;
+  line-height: 1.3em;
+  margin: 28px 0px 14px 0px;
+}
+.store-section .store-section-content .store-content-title p {
+  font-size: 14px;
+}
+.store-section .store-section-content .store-Button {
+  align-self: center;
+  padding: 2px;
+  border-radius: 2rem;
+  transition-duration: 0.3s;
+}
+.store-section .store-section-content .store-Button a {
+  text-decoration: none;
+}
+.store-section .store-section-content .store-Button a .store-button {
+  width: fit-content;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  padding: 10px 14px;
+  font-weight: 600;
+  color: #1F1F1F;
+  background-color: #FFFFFF;
+}
+.store-section .store-section-content .store-Button:hover {
+  background-color: #FFFFFF;
+}
+.store-section .store-section-content .store-Button:hover .store-button {
+  border-color: #1F1F1F;
+}
+
+/*---------------SOCIAL MEDIA-----------------*/
+/*max-width 1023px*/
 .social-section {
   width: 100%;
   background-color: #eeeeee;
@@ -152,5 +207,6 @@ body {
     margin: 40px 15px;
   }
 }
+/*----------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
