@@ -71,6 +71,7 @@ body {
             }
             & p{
                 font-size: 14px;
+                color: #B2B2B2;
             }
         }
         & .store-Button{
@@ -78,6 +79,7 @@ body {
             padding: 2px;
             border-radius: 2rem;
             transition-duration: 0.3s;
+            width: fit-content;
             a{
                 text-decoration: none;
                 .store-button{

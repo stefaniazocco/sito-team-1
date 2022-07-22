@@ -115,6 +115,42 @@ body {
   font-family: "SST";
 }
 
+/*    BOTTONE DA RIUTILIZZARE CAMBIANDO I COLORI E L'ALLINEAMENTO
+
+& .store-Button{
+    align-self: center;
+    padding: 2px;
+    border-radius: 2rem;
+    transition-duration: 0.3s;
+    a{
+        text-decoration: none;
+        .store-button{
+            width: fit-content;
+            border-radius: 2rem;
+            border: 2px solid transparent;
+            padding: 10px 14px;
+            font-weight: 600;
+            color: typography.$colorBlack;
+            background-color: typography.$colorWhite;
+        }
+    }
+    &:hover{
+        background-color: typography.$colorWhite;
+
+        & .store-button{
+            border-color:  typography.$colorBlack;
+        }
+    }
+}
+*/
+.opaco {
+  opacity: 0.5;
+}
+
+.grigio {
+  color: #B2B2B2;
+}
+
 /*------------------STORE------------------*/
 /*max-width 365px*/
 .store-section {
@@ -144,12 +180,14 @@ body {
 }
 .store-section .store-section-content .store-content-title p {
   font-size: 14px;
+  color: #B2B2B2;
 }
 .store-section .store-section-content .store-Button {
   align-self: center;
   padding: 2px;
   border-radius: 2rem;
   transition-duration: 0.3s;
+  width: fit-content;
 }
 .store-section .store-section-content .store-Button a {
   text-decoration: none;
