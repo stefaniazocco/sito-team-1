@@ -21,12 +21,13 @@ body {
     width: fit-content;
     a{
         text-decoration: none;
+        font-size: 14px;
         div {
             width: fit-content;
             border-radius: 2rem;
             border: 2px solid transparent;
-            padding: 10px 14px;
-            font-weight: 600;
+            padding: 4px 14px;
+            font-weight: 700;
             color: typography.$colorBlack;
             background-color: typography.$colorWhite;
         }
