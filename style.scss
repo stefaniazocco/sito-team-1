@@ -40,6 +40,67 @@ body {
 }
 */
 
+/*------------------STORE------------------*/
+        /*max-width 365px*/
+.store-section{
+    display: flex;
+    justify-content: center;
+    color: typography.$colorWhite;
+    //align-items: center;
+
+    .store-section-bg{
+        width: 100%;
+        position: relative;
+    }
+    .store-section-content{
+        position: absolute;
+        z-index: 1;
+        margin: 20px;
+        line-height: 1.5em;
+        display: flex;
+        flex-direction: column;
+        
+        .store-content-title{
+            & img{
+                width: 100px;
+            }
+            & h2{
+                font-size: 29px;
+                line-height: 1.3em;
+                margin: 28px 0px 14px 0px;
+            }
+            & p{
+                font-size: 14px;
+            }
+        }
+        & .store-Button{
+            align-self: center;
+            padding: 2px;
+            border-radius: 2rem;
+            transition-duration: 0.3s;
+            a{
+                text-decoration: none;
+                .store-button{
+                    width: fit-content;
+                    border-radius: 2rem;
+                    border: 2px solid transparent;
+                    padding: 10px 14px;
+                    font-weight: 600;
+                    color: typography.$colorBlack;
+                    background-color: typography.$colorWhite;
+                }
+            }
+            &:hover{
+                background-color: typography.$colorWhite;
+                
+                & .store-button{
+                    border-color:  typography.$colorBlack;
+                }
+            }
+        }
+    }
+}
+
 
 /*---------------SOCIAL MEDIA-----------------*/
     /*max-width 1023px*/
