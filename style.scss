@@ -40,24 +40,32 @@ body {
 }
 */
 
+
 /*------------------STORE------------------*/
         /*max-width 365px*/
 .store-section{
+    color: typography.$colorWhite;
+    width: 100%;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
-    color: typography.$colorWhite;
-    //align-items: center;
-
     .store-section-bg{
+        justify-items: center;
         position: relative;
+        filter: opacity(80%);
     }
     .store-section-content{
         position: absolute;
+        top: 0;
         z-index: 1;
-        margin: 20px;
         line-height: 1.5em;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.534);
         
         .store-content-title{
             & img{
@@ -73,20 +81,22 @@ body {
                 color: #B2B2B2;
             }
         }
+
         & .store-Button{
             align-self: center;
             padding: 2px;
             border-radius: 2rem;
-            transition-duration: 0.3s;
+            transition-delay: 0.2s;
             width: fit-content;
             a{
                 text-decoration: none;
+                font-size: 14px;
                 .store-button{
                     width: fit-content;
                     border-radius: 2rem;
                     border: 2px solid transparent;
-                    padding: 10px 14px;
-                    font-weight: 600;
+                    padding: 4px 14px;
+                    font-weight: 700;
                     color: typography.$colorBlack;
                     background-color: typography.$colorWhite;
                 }
