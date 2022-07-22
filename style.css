@@ -143,14 +143,6 @@ body {
     }
 }
 */
-.opaco {
-  opacity: 0.5;
-}
-
-.grigio {
-  color: #B2B2B2;
-}
-
 /*------------------STORE------------------*/
 /*max-width 365px*/
 .store-section {
@@ -159,7 +151,6 @@ body {
   color: #FFFFFF;
 }
 .store-section .store-section-bg {
-  width: 100%;
   position: relative;
 }
 .store-section .store-section-content {
