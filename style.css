@@ -115,43 +115,15 @@ body {
   font-family: "SST";
 }
 
-/*    BOTTONE DA RIUTILIZZARE CAMBIANDO I COLORI E L'ALLINEAMENTO
-
-& .store-Button{
-    align-self: center;
-    padding: 2px;
-    border-radius: 2rem;
-    transition-duration: 0.3s;
-    a{
-        text-decoration: none;
-        .store-button{
-            width: fit-content;
-            border-radius: 2rem;
-            border: 2px solid transparent;
-            padding: 10px 14px;
-            font-weight: 600;
-            color: typography.$colorBlack;
-            background-color: typography.$colorWhite;
-        }
-    }
-    &:hover{
-        background-color: typography.$colorWhite;
-
-        & .store-button{
-            border-color:  typography.$colorBlack;
-        }
-    }
-}
-*/
 /*------------------STORE------------------*/
 /*max-width 365px*/
 .store-section {
   color: #FFFFFF;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  position: relative;
+  /*position: relative;*/
   z-index: -2;
   background-color: #1a1a1a;
 }
@@ -159,15 +131,17 @@ body {
   filter: blur(2px);
   filter: opacity(30%);
   position: absolute;
-  z-index: -1;
+  z-index: 0;
+  top: 0;
   right: 0;
-  zoom: 130%;
+  zoom: 100%;
 }
 .store-section .store-section-content {
+  position: relative;
   line-height: 1.5em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 22px;
   padding: 20px;
   width: 100%;
@@ -186,16 +160,12 @@ body {
   font-size: 14px;
   color: #B2B2B2;
 }
-.store-section .store-section-content .store-card-div {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
 .store-section .store-section-content .store-card-div .store-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 22px;
+  margin-top: 22px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .store-section .store-section-content .store-card-div .store-card img {
@@ -206,17 +176,17 @@ body {
   margin: 14px;
   padding-bottom: 22px;
 }
-.store-section .store-section-content .store-card-div .store-card .store-card-Button {
+.store-section .store-section-content .store-card-div .store-card .card-Button {
   padding: 2px;
   border-radius: 2rem;
-  transition-delay: 0.2s;
+  transition-duration: 0.3s;
   width: fit-content;
 }
-.store-section .store-section-content .store-card-div .store-card .store-card-Button a {
+.store-section .store-section-content .store-card-div .store-card .card-Button a {
   text-decoration: none;
   font-size: 14px;
 }
-.store-section .store-section-content .store-card-div .store-card .store-card-Button a div {
+.store-section .store-section-content .store-card-div .store-card .card-Button a div {
   width: fit-content;
   border-radius: 2rem;
   border: 2px solid transparent;
@@ -225,17 +195,17 @@ body {
   color: #FFFFFF;
   background-color: #cd3d0f;
 }
-.store-section .store-section-content .store-card-div .store-card .store-card-Button:hover {
+.store-section .store-section-content .store-card-div .store-card .card-Button:hover {
   background-color: #cd3d0f;
 }
-.store-section .store-section-content .store-card-div .store-card .store-card-Button:hover div {
-  border-color: #FFFFFF;
+.store-section .store-section-content .store-card-div .store-card .card-Button:hover a > div {
+  border-color: #1F1F1F;
 }
 .store-section .store-section-content .store-Button {
   align-self: center;
   padding: 2px;
   border-radius: 2rem;
-  transition-delay: 0.2s;
+  transition-duration: 0.3s;
   width: fit-content;
   margin: 40px 0px;
 }
@@ -259,11 +229,37 @@ body {
   border-color: #1F1F1F;
 }
 
-@media (min-width: 1400px) {
-  .store-section {
-    justify-content: center;
+@media (min-width: 622px) {
+  .store-section-content {
+    max-width: 620px;
+  }
+  .store-section-content .store-card-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 22px;
+    text-align: center;
   }
 }
+@media (min-width: 1024px) {
+  .store-section-content {
+    max-width: 880px;
+  }
+  .store-section-content .store-card-div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .store-section-content .store-card-div .store-card {
+    width: 200px;
+    text-align: center;
+    padding: 0px;
+  }
+}
+/*@media(min-width: 1400px){
+    .store-section {
+        justify-content: center;
+    }
+}*/
 /*---------------SOCIAL MEDIA-----------------*/
 /*max-width 1023px*/
 .social-section {
