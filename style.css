@@ -151,30 +151,34 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: -2;
+  background-color: #1a1a1a;
 }
 .store-section .store-section-bg {
-  justify-items: center;
-  position: relative;
-  filter: opacity(80%);
+  filter: blur(2px);
+  filter: opacity(30%);
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  zoom: 130%;
 }
 .store-section .store-section-content {
-  position: absolute;
-  top: 0;
-  z-index: 1;
   line-height: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 22px;
   padding: 20px;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.534);
+  height: auto;
 }
 .store-section .store-section-content .store-content-title img {
   width: 100px;
 }
 .store-section .store-section-content .store-content-title h2 {
   font-size: 29px;
+  font-weight: 400;
   line-height: 1.3em;
   margin: 28px 0px 14px 0px;
 }
@@ -182,18 +186,64 @@ body {
   font-size: 14px;
   color: #B2B2B2;
 }
+.store-section .store-section-content .store-card-div {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.store-section .store-section-content .store-card-div .store-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.store-section .store-section-content .store-card-div .store-card img {
+  max-width: 100%;
+}
+.store-section .store-section-content .store-card-div .store-card p {
+  font-size: 14px;
+  margin: 14px;
+  padding-bottom: 22px;
+}
+.store-section .store-section-content .store-card-div .store-card .store-card-Button {
+  padding: 2px;
+  border-radius: 2rem;
+  transition-delay: 0.2s;
+  width: fit-content;
+}
+.store-section .store-section-content .store-card-div .store-card .store-card-Button a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.store-section .store-section-content .store-card-div .store-card .store-card-Button a div {
+  width: fit-content;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  padding: 4px 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #cd3d0f;
+}
+.store-section .store-section-content .store-card-div .store-card .store-card-Button:hover {
+  background-color: #cd3d0f;
+}
+.store-section .store-section-content .store-card-div .store-card .store-card-Button:hover div {
+  border-color: #FFFFFF;
+}
 .store-section .store-section-content .store-Button {
   align-self: center;
   padding: 2px;
   border-radius: 2rem;
   transition-delay: 0.2s;
   width: fit-content;
+  margin: 40px 0px;
 }
 .store-section .store-section-content .store-Button a {
   text-decoration: none;
   font-size: 14px;
 }
-.store-section .store-section-content .store-Button a .store-button {
+.store-section .store-section-content .store-Button a div {
   width: fit-content;
   border-radius: 2rem;
   border: 2px solid transparent;
@@ -205,10 +255,15 @@ body {
 .store-section .store-section-content .store-Button:hover {
   background-color: #FFFFFF;
 }
-.store-section .store-section-content .store-Button:hover .store-button {
+.store-section .store-section-content .store-Button:hover div {
   border-color: #1F1F1F;
 }
 
+@media (min-width: 1400px) {
+  .store-section {
+    justify-content: center;
+  }
+}
 /*---------------SOCIAL MEDIA-----------------*/
 /*max-width 1023px*/
 .social-section {
