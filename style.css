@@ -119,12 +119,10 @@ body {
 /*max-width 365px*/
 .store-section {
   color: #FFFFFF;
-  width: 100%;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
   justify-content: center;
-  /*position: relative;*/
-  z-index: -2;
+  z-index: 1;
   background-color: #1a1a1a;
 }
 .store-section .store-section-bg {
@@ -132,18 +130,18 @@ body {
   filter: opacity(30%);
   position: absolute;
   z-index: 0;
-  top: 0;
-  right: 0;
-  zoom: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 .store-section .store-section-content {
   position: relative;
+  z-index: 1;
   line-height: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 22px;
-  padding: 20px;
+  margin: 20px;
   width: 100%;
   height: auto;
 }
@@ -166,15 +164,15 @@ body {
   align-items: center;
   padding: 22px;
   margin-top: 22px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.151);
 }
 .store-section .store-section-content .store-card-div .store-card img {
   max-width: 100%;
 }
 .store-section .store-section-content .store-card-div .store-card p {
   font-size: 14px;
-  margin: 14px;
-  padding-bottom: 22px;
+  margin-top: 22px;
+  padding-bottom: 20px;
 }
 .store-section .store-section-content .store-card-div .store-card .card-Button {
   padding: 2px;
@@ -208,10 +206,10 @@ body {
   transition-duration: 0.3s;
   width: fit-content;
   margin: 40px 0px;
+  font-size: 14px;
 }
 .store-section .store-section-content .store-Button a {
   text-decoration: none;
-  font-size: 14px;
 }
 .store-section .store-section-content .store-Button a div {
   width: fit-content;
@@ -230,36 +228,98 @@ body {
 }
 
 @media (min-width: 622px) {
-  .store-section-content {
-    max-width: 620px;
+  .store-section .store-section-bg {
+    height: 70%;
   }
-  .store-section-content .store-card-div {
+  .store-section .store-section-content {
+    max-width: 620px;
+    padding: 20px;
+  }
+  .store-section .store-section-content .store-content-title {
+    max-width: 70%;
+  }
+  .store-section .store-section-content .store-content-title h2 {
+    font-size: 34px;
+  }
+  .store-section .store-section-content .store-card-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 22px;
-    text-align: center;
+    column-gap: 20px;
+  }
+  .store-section .store-section-content .store-card-div .store-card {
+    width: 300px;
+    padding: 20px 10px;
+  }
+  .store-section .store-section-content .store-card-div .store-card img {
+    width: 200px;
   }
 }
 @media (min-width: 1024px) {
-  .store-section-content {
-    max-width: 880px;
+  .store-section .store-section-content {
+    max-width: 900px;
   }
-  .store-section-content .store-card-div {
+  .store-section .store-section-content .store-content-title {
+    max-width: 45%;
+  }
+  .store-section .store-section-content .store-content-title img {
+    max-width: 65px;
+  }
+  .store-section .store-section-content .store-card-div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
-  .store-section-content .store-card-div .store-card {
-    width: 200px;
+  .store-section .store-section-content .store-card-div .store-card {
+    width: 205px;
     text-align: center;
-    padding: 0px;
+  }
+  .store-section .store-section-content .store-card-div .store-card img {
+    width: 125px;
   }
 }
-/*@media(min-width: 1400px){
-    .store-section {
-        justify-content: center;
-    }
-}*/
+@media (min-width: 1367px) {
+  .store-section .store-section-content {
+    max-width: 1320px;
+  }
+  .store-section .store-section-content .store-content-title {
+    max-width: 45%;
+  }
+  .store-section .store-section-content .store-content-title img {
+    max-width: 100px;
+  }
+  .store-section .store-section-content .store-content-title h2 {
+    font-size: 39px;
+  }
+  .store-section .store-section-content .store-card-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .store-section .store-section-content .store-card-div .store-card {
+    width: 305px;
+    height: 410px;
+    text-align: center;
+    position: relative;
+  }
+  .store-section .store-section-content .store-card-div .store-card img {
+    width: 205px;
+  }
+  .store-section .store-section-content .store-card-div .store-card p {
+    font-size: 16px;
+    margin: 20px;
+  }
+  .store-section .store-section-content .store-card-div .store-card .card-Button {
+    position: absolute;
+    bottom: 20px;
+  }
+  .store-section .store-section-content .store-card-div .store-card .card-Button > a > div {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+  .store-section .store-section-content .store-Button > a > div {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+}
 /*---------------SOCIAL MEDIA-----------------*/
 /*max-width 1023px*/
 .social-section {

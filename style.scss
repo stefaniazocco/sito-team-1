@@ -10,53 +10,53 @@ body {
 }
 
 
+
 /*------------------STORE------------------*/
         /*max-width 365px*/
 .store-section{
     color: typography.$colorWhite;
-    width: 100%;
-    overflow: hidden;
+    //height: 3200px;
     display: flex;
+    overflow: hidden;
     justify-content: center;
-    /*position: relative;*/
-    z-index: -2;
+    //position: relative;
+    z-index: 1;
     background-color: #1a1a1a;
     .store-section-bg{
         filter: blur(2px);
         filter: opacity(30%);
         position: absolute;
+        //position: relative;
         z-index: 0;
-        top: 0;
-        right: 0;
-        zoom: 100%;
+        overflow: hidden;
+        width: 100%;
     }
     .store-section-content{
         position: relative;
+        z-index: 1;
         line-height: 1.5em;
         display: flex;
         flex-direction: column;
         align-items:flex-start;
         gap: 22px;
-        padding: 20px;
+        margin: 20px;
         width: 100%;
         height: auto;  
         .store-content-title{
-            & img{
+            img{
                 width: 100px;
             }
-            & h2{
+            h2{
                 font-size: 29px;
                 font-weight: 400;
                 line-height: 1.3em;
                 margin: 28px 0px 14px 0px;
             }
-            & p{
+            p{
                 font-size: 14px;
                 color: #B2B2B2;
             }
         }
-
-    
         .store-card-div{
             .store-card{
                 display: flex;
@@ -64,14 +64,14 @@ body {
                 align-items: center;
                 padding: 22px;
                 margin-top: 22px;
-                background-color: rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.151);
                 img{
                     max-width: 100%;
                 }
                 p{
                     font-size: 14px;
-                    margin: 14px;
-                    padding-bottom: 22px;
+                    margin-top: 22px;
+                    padding-bottom: 20px;
                 }
                 .card-Button{
                 padding: 2px;
@@ -103,7 +103,7 @@ body {
         }
  
     
-    
+            
         & .store-Button{
             align-self: center;
             padding: 2px;
@@ -111,9 +111,9 @@ body {
             transition-duration: 0.3s;
             width: fit-content;
             margin: 40px 0px;
+            font-size: 14px;
             a{
                 text-decoration: none;
-                font-size: 14px;
                 div{
                     width: fit-content;
                     border-radius: 2rem;
@@ -136,37 +136,111 @@ body {
 }
 
 @media(min-width: 622px){
-    .store-section-content{
-        max-width: 620px;
-        .store-card-div{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            column-gap: 22px;
-            text-align: center;
+    .store-section{
+        .store-section-bg{
+            height: 70%;
+        }
+        .store-section-content{
+            max-width: 620px;
+            padding: 20px;
+            .store-content-title{
+                max-width: 70%;
+                h2{
+                    font-size: 34px;
+                }
+            }
+            .store-card-div{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                column-gap: 20px;
+                
+                .store-card{
+                    width: 300px;
+                    padding: 20px 10px;                
+                    img {
+                    width: 200px;
+                    }
+                }
+                
+            }
         }
     }
 }
 
 @media(min-width: 1024px){
-    .store-section-content{
-       max-width: 880px; 
-       .store-card-div{
-        display: flex;
-        justify-content: space-evenly;
-        .store-card{
-            width: 200px;
-            text-align: center;
+    .store-section{
+        .store-section-content{
+            max-width: 900px; 
+            .store-content-title{
+                max-width: 45%;
+                img{
+                    max-width: 65px;
+                }
+                
+            }
+        .store-card-div{
+            display: flex;
+            justify-content: space-between;
+                .store-card{
+                    width: 205px;
+                    text-align: center;
+                    img{
+                        width: 125px;
+                    }
+                }
+            }
         }
-       }
     }
 }
 
-/*@media(min-width: 1400px){
-    .store-section {
-        justify-content: center;
+@media(min-width: 1367px){
+    .store-section{
+        .store-section-content{
+            max-width: 1320px; 
+            .store-content-title{
+                max-width: 45%;
+                img{
+                    max-width: 100px;
+                }
+                h2{
+                    font-size: 39px;
+                }
+            }
+            .store-card-div{
+                display: flex;
+                justify-content: space-between;
+                .store-card{
+                    width: 305px;
+                    height: 410px;
+                    text-align: center;
+                    position: relative;
+                    img{
+                        width: 205px;
+                    }
+                    p{
+                        font-size: 16px;
+                        //min-height: 100px;
+                        margin: 20px;
+                    }
+                    .card-Button{
+                        position: absolute;
+                        bottom: 20px;
+                    }
+                    .card-Button>a>div{
+                        font-size: 16px;
+                        padding: 8px 14px;
+                    }
+                }
+            }
+            .store-Button>a>div {
+                font-size: 16px;
+                padding: 8px 14px;
+            }
+        }
     }
-}*/
+}
+
 
 /*---------------SOCIAL MEDIA-----------------*/
     /*max-width 1023px*/
