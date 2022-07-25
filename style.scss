@@ -7,12 +7,12 @@ body {
     margin: 0;
     width: 100%;
     font-family: "SST";
+    overflow-x: hidden;
 }
-
-
 
 /*------------------STORE------------------*/
         /*max-width 365px*/
+
 .store-section{
     color: typography.$colorWhite;
     //height: 3200px;
@@ -29,7 +29,8 @@ body {
         //position: relative;
         z-index: 0;
         overflow: hidden;
-        width: 100%;
+        //width: 100%;
+        width: auto;
     }
     .store-section-content{
         position: relative;
@@ -135,6 +136,7 @@ body {
     }
 }
 
+
 @media(min-width: 622px){
     .store-section{
         .store-section-bg{
@@ -194,8 +196,13 @@ body {
     }
 }
 
+
+
 @media(min-width: 1367px){
     .store-section{
+        .store-section-bg{
+            width: auto;
+        }
         .store-section-content{
             max-width: 1320px; 
             .store-content-title{
