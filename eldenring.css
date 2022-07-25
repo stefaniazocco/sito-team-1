@@ -1,7 +1,11 @@
-* {
-
+@import url(./font/stylesheet.css);
+body {
+    /*color: typography.$colorBlack;*/
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    width: 100%;
+    font-family: "SST";
+    overflow-x: hidden;
 }
 .container-nuove-uscite {
 
