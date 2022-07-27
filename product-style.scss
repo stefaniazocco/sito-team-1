@@ -1,0 +1,34 @@
+@use "typography";  // ricordarsi di usare typography.$variabile
+body {
+    color: typography.$colorBlack;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    font-family: "SST";
+    overflow-x: hidden;
+}
+section{
+    width: 100%;
+    
+    justify-content: center;
+    .centered-div{
+        width: 1170px;
+        .breadcrumbs-div ul{
+            gap: 20px;
+            list-style-type: none;
+        }
+        .product-main{
+            display: flex;
+            .image-little{
+                width: 88px;
+                height: 88px;
+                border: 1px solid #0072ce;
+            }
+            .product-right{
+                .product-quantity{
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import url(./font/stylesheet.css);
+body {
+  color: #1F1F1F;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  font-family: "SST";
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  justify-content: center;
+}
+section .centered-div {
+  width: 1170px;
+}
+section .centered-div .breadcrumbs-div ul {
+  gap: 20px;
+  list-style-type: none;
+}
+section .centered-div .product-main {
+  display: flex;
+}
+section .centered-div .product-main .image-little {
+  width: 88px;
+  height: 88px;
+  border: 1px solid #0072ce;
+}
+section .centered-div .product-main .product-right .product-quantity {
+  gap: 20px;
+}
+
+/*# sourceMappingURL=product-style.css.map */
