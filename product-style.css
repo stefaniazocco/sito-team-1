@@ -82,6 +82,7 @@ section .centered-div .product-main .product-right .product-quantity .size-div .
   padding: 0px 10px;
   border: 1px solid #ddd;
   font-size: 14px;
+  appearance: none;
 }
 section .centered-div .product-main .product-right .product-quantity .quantity-div .quantity-label {
   font-size: 14px;
