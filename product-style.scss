@@ -7,6 +7,7 @@ body {
     font-family: "SST";
     overflow-x: hidden;
 }
+
 section{
     width: 100%;
     
@@ -25,6 +26,10 @@ section{
                 border: 1px solid #0072ce;
             }
             .product-right{
+                .product-title{
+                    font-size: 26px;
+                    margin-bottom: 30px;
+                }
                 .product-quantity{
                     gap: 20px;
                 }

@@ -27,6 +27,10 @@ section .centered-div .product-main .image-little {
   height: 88px;
   border: 1px solid #0072ce;
 }
+section .centered-div .product-main .product-right .product-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
 section .centered-div .product-main .product-right .product-quantity {
   gap: 20px;
 }
