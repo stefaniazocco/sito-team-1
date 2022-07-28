@@ -110,10 +110,11 @@ footer > div > ul {
     width: 130px;
   }
 }
-.cookies-section {
+#cookies-section {
   width: 100%;
   height: fit-content;
   background-color: #0072ce;
+  display: flex;
   align-items: center;
   gap: 10px;
   padding: 30px 40px;
@@ -121,25 +122,25 @@ footer > div > ul {
   z-index: 3;
   bottom: 0;
 }
-.cookies-section .logo-cookies {
+#cookies-section .logo-cookies {
   width: 50px;
   height: 50px;
 }
-.cookies-section .cookies-text, .cookies-section .cookies-text > a {
+#cookies-section .cookies-text, #cookies-section .cookies-text > a {
   color: #FFFFFF;
 }
-.cookies-section .cookies-Button {
+#cookies-section .cookies-Button {
   align-self: center;
   padding: 2px;
   border-radius: 2rem;
   transition-duration: 0.3s;
   width: fit-content;
 }
-.cookies-section .cookies-Button a {
+#cookies-section .cookies-Button a {
   text-decoration: none;
   font-size: 16px;
 }
-.cookies-section .cookies-Button a div {
+#cookies-section .cookies-Button a div {
   width: fit-content;
   border-radius: 2rem;
   border: 2px solid transparent;
@@ -148,20 +149,20 @@ footer > div > ul {
   color: #FFFFFF;
   background-color: #1F1F1F;
 }
-.cookies-section .cookies-Button:hover {
+#cookies-section .cookies-Button:hover {
   background-color: #1F1F1F;
 }
-.cookies-section .cookies-Button:hover div {
+#cookies-section .cookies-Button:hover div {
   border-color: #0072ce;
 }
-.cookies-section .cookies-Button:nth-of-type(3) a > div {
+#cookies-section .cookies-Button:nth-of-type(3) a > div {
   color: #1F1F1F;
   background-color: #FFFFFF;
 }
-.cookies-section .cookies-Button:nth-of-type(3):hover {
+#cookies-section .cookies-Button:nth-of-type(3):hover {
   background-color: #FFFFFF;
 }
-.cookies-section .cookies-Button:nth-of-type(3):hover div {
+#cookies-section .cookies-Button:nth-of-type(3):hover div {
   border-color: #0072ce;
 }
 

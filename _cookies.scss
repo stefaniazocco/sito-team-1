@@ -1,8 +1,9 @@
 @use "typography";
-.cookies-section{
+#cookies-section{
     width: 100%;
     height: fit-content;
     background-color: typography.$colorCookies;
+    display: flex;
     align-items: center;
     gap: 10px;
     padding: 30px 40px;
@@ -16,6 +17,7 @@
     .cookies-text, .cookies-text>a{
         color: typography.$colorWhite;
     }
+
     .cookies-Button{
         align-self: center;
         padding: 2px;
@@ -57,6 +59,7 @@
         }
     }
 }
+
 .close-tab{
     background-color: transparent;
     border: none;
