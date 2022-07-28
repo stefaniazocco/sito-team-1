@@ -6,6 +6,7 @@ body {
     width: 100%;
     font-family: "SST";
     overflow-x: hidden;
+    line-height: 1.6em;
 }
 
 section{
@@ -29,6 +30,17 @@ section{
                 .product-title{
                     font-size: 26px;
                     margin-bottom: 30px;
+                }
+                .product-price-line{
+                    .product-price{
+                        font-size: 18px;
+                    }
+                    .product-insu{
+                        font-size: 16px;
+                    }
+                    .product-iva{
+                        font-size: 14px;
+                    }
                 }
                 .product-quantity{
                     gap: 20px;
