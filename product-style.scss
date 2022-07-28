@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
     
 }
-
 section{
     width: 100%;
     line-height: 1.6em;
@@ -17,10 +16,9 @@ section{
     .centered-div{
         width: 1140px;
         .breadcrumbs-div ul{
-            gap: 20px;
+            //gap: 20px;
             list-style-type: none;
             font-size: 11px;
-            display: inline;
             li>a{
                 text-decoration: none;
                 color: typography.$colorBlack;
