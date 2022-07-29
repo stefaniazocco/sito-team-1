@@ -69,20 +69,75 @@ section .centered-div .product-main .product-right .product-quantity {
   margin-top: 40px;
   margin-bottom: 15px;
 }
-section .centered-div .product-main .product-right .product-quantity .size-div .size-label {
-  font-size: 14px;
+section .centered-div .product-main .product-right .product-quantity .select-group {
+  position: relative;
 }
-section .centered-div .product-main .product-right .product-quantity .size-div .size-guide {
-  float: right;
-  font-size: 14px;
-}
-section .centered-div .product-main .product-right .product-quantity .size-div .select-div .select-list {
+section .centered-div .product-main .product-right .product-quantity .select-group .flexa {
   width: 380px;
-  height: 50px;
-  padding: 0px 10px;
-  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .flexa label {
+  display: block;
+  font-weight: 500;
+  color: black;
   font-size: 14px;
-  appearance: none;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .flexa a {
+  font-size: 14px;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .button {
+  display: flex;
+  padding-left: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.2rem;
+  width: 380px;
+  background-color: white;
+  border: 1px solid #ddd;
+  position: relative;
+  font-size: 14px;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .button .arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  padding: 4px;
+  transform: rotate(45deg);
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .button .stock {
+  color: #00a2ff;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .button:focus {
+  border: 3px solid rgba(0, 123, 255, 0.25);
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .hidden {
+  display: none;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .dropdown {
+  position: absolute;
+  width: 380px;
+  top: 70px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .dropdown input {
+  display: none;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .dropdown .option:focus {
+  border: 3px solid rgba(0, 123, 255, 0.25);
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .dropdown label {
+  display: block;
+  padding: 1rem;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: black;
+  font-size: 14px;
+}
+section .centered-div .product-main .product-right .product-quantity .select-group .dropdown label .stock {
+  color: #00a2ff;
 }
 section .centered-div .product-main .product-right .product-quantity .quantity-div .quantity-label {
   font-size: 14px;

@@ -68,23 +68,78 @@ section{
                     gap: 20px;
                     margin-top: 40px;
                     margin-bottom: 15px;
-                    .size-div{
-                        .size-label{
+                    
+                    .select-group{
+                        position: relative;
+                        .flexa{
+                          width: 380px;
+                          display:flex;
+                          justify-content: space-between;
+                          align-items: flex-end;
+                          label{
+                            display: block;
+                            font-weight: 500;
+                            color: black;
                             font-size: 14px;
-                        }
-                        .size-guide{
-                            float: right;
+                          }
+                          a{
                             font-size: 14px;
+                          }
                         }
-                        .select-div{
-                            .select-list{
-                                width: 380px;
-                                height: 50px;
-                                padding: 0px 10px;
-                                border: 1px solid #ddd;
-                                font-size: 14px;
-                                appearance: none;
+                        .button{
+                          display: flex;
+                          padding-left: 1rem;
+                          justify-content: space-between;
+                          align-items: center;
+                          height: 3.2rem;
+                          width: 380px;
+                          background-color: white;
+                          border: 1px solid #ddd;
+                          position: relative;
+                          font-size: 14px;
+
+                          .arrow{
+                            border: solid black;
+                            border-width: 0 2px 2px 0;
+                            padding: 4px;
+                            transform: rotate(45deg);
+                          }
+                          .stock{
+                            color: #00a2ff;
+                          }
+                        }
+                        .button:focus {
+                            border: 3px solid rgb(0 123 255 / 25%);
+                          }
+                        .hidden {
+                            display: none;
+                        }
+
+                        .dropdown{
+                          position: absolute;
+                          width: 380px;
+                          top: 70px;
+                          box-sizing: border-box;
+                          border: 1px solid #ddd;
+                          overflow: hidden;
+                          input{
+                            display: none;
+                          }
+                          
+                          .option:focus{
+                            border: 3px solid rgb(0 123 255 / 25%);
+                          }
+                          label{
+                            display: block;
+                            padding: 1rem;
+                            font-weight: 400;
+                            background-color: #FFFFFF;
+                            color: black;
+                            font-size: 14px;
+                            .stock{
+                                color: #00a2ff;
                             }
+                          }
                         }
                     }
                     .quantity-div{
