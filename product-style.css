@@ -301,7 +301,6 @@ section .centered-div .product-main .product-info-title {
 }
 section .centered-div .product-main .product-right {
   width: 520px;
-  margin-left: 10px;
 }
 section .centered-div .product-main .product-right .product-info-title {
   display: block;
@@ -315,7 +314,7 @@ section .centered-div .product-main .product-right .product-quantity .select-gro
   position: relative;
 }
 section .centered-div .product-main .product-right .product-quantity .select-group .flexa {
-  width: 380px;
+  width: 370px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -336,7 +335,7 @@ section .centered-div .product-main .product-right .product-quantity .select-gro
   justify-content: space-between;
   align-items: center;
   height: 3.2rem;
-  width: 380px;
+  width: 370px;
   background-color: white;
   border: 1px solid #ddd;
   position: relative;
@@ -356,7 +355,7 @@ section .centered-div .product-main .product-right .product-quantity .select-gro
 }
 section .centered-div .product-main .product-right .product-quantity .select-group .dropdown {
   position: absolute;
-  width: 380px;
+  width: 370px;
   top: 70px;
   box-sizing: border-box;
   border: 1px solid #ddd;
@@ -500,8 +499,8 @@ section .centered-div .product-details .details-title {
     height: 50px;
   }
   section .centered-div .product-main .product-left .image-big {
-    width: 450px;
-    height: 450px;
+    width: 445px;
+    height: 445px;
   }
 }
 @media (max-width: 991px) {

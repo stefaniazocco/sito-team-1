@@ -328,7 +328,7 @@ section{
             }
             .product-right{
                 width: 520px;
-                margin-left: 10px;
+
                 .product-info-title{
                     display: block;
                 }
@@ -336,11 +336,11 @@ section{
                     gap: 20px;
                     margin-top: 40px;
                     margin-bottom: 15px;
-                    
+                
                     .select-group{
                         position: relative;
                         .flexa{
-                          width: 380px;
+                          width: 370px;
                           display:flex;
                           justify-content: space-between;
                           align-items: flex-end;
@@ -361,7 +361,7 @@ section{
                           justify-content: space-between;
                           align-items: center;
                           height: 3.2rem;
-                          width: 380px;
+                          width: 370px;
                           background-color: white;
                           border: 1px solid #ddd;
                           position: relative;
@@ -380,12 +380,10 @@ section{
                         .button:focus {
                             border: 3px solid rgb(0 123 255 / 25%);
                           }
-                        
-                    
 
                         .dropdown{
                           position: absolute;
-                          width: 380px;
+                          width: 370px;
                           top: 70px;
                           box-sizing: border-box;
                           border: 1px solid #ddd;
@@ -468,6 +466,7 @@ section{
                         }
                     }
                 }
+
                 .price-description{
                     font-size: 14px;
                 }
@@ -546,8 +545,8 @@ section{
                         height: 50px;   
                     }
                     .image-big{
-                        width: 450px;
-                        height: 450px;
+                        width: 445px;
+                        height: 445px;
                     }
                 }
             }
