@@ -39,7 +39,7 @@ header{
         .nav-mobile{
             display: flex;
             justify-content: space-between;
-            padding: 10px 10px;
+            padding: 10px 20px;
             border-top: 2px solid #ddd;
             border-bottom: 2px solid #ddd;
             .hamburger {
@@ -82,9 +82,9 @@ header{
             a{
                 text-decoration: none;
                 color: typography.$colorBlack;
-                padding-left: 10px;
+                padding-left: 20px;
                 width: 100%;
-                //height: 30px;
+                
             }
             .li-1{
                 padding: 10px 0px;
@@ -667,3 +667,160 @@ section{
 // -------------FOOTER----------------------
 
 
+footer{
+    background-color: #00439c;
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+        .footer-top-left{
+            border-bottom: 1px solid #1a6ad8;
+            padding: 10px 0px;
+            width: 100%;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: typography.$colorWhite;
+                font-size: 19px;
+                font-weight: 700;
+            }
+            a:not(:first-of-type){
+                display: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        .footer-top-right{
+            display: flex;
+            gap: 30px;
+            align-self: center;
+            padding: 10px 0px;
+        }
+    }
+    .footer-center{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: typography.$colorWhite;
+            font-size: 14px;
+            width: 100%;
+            border-bottom: 1px solid #1a6ad8;
+            padding: 10px 0px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+    .footer-bottom{
+        color: #8fd5fd;
+        text-align: center;
+        font-size: 11px;
+        padding: 10px;
+        line-height: 11px;
+    }
+}
+
+
+
+@media (min-width: 768px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer-top{
+            flex-direction: row;
+            //border-bottom: 1px solid #1a6ad8;
+            padding: 20px;
+            width: 750px;
+            .footer-top-left{
+                border-bottom: 0px;
+                display: flex;
+                gap: 30px;
+                a{
+                    text-align: start;
+                }
+                a:first-of-type{
+                    display: none;
+                }
+                a:not(:first-of-type){
+                    display: block;
+                }
+
+            }
+        }
+        .footer-border{
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid #1a6ad8;
+        }
+        .footer-center{
+            flex-direction: row;
+            gap: 30px;
+            padding: 15px;
+            width: 750px;
+            a{
+                border-bottom: 0px;
+                width: fit-content;
+            }
+        }
+        .footer-bottom{
+            width: 750px;
+            text-align: start;
+            padding: 15px;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    footer{
+        .footer-top{
+            width: 940px;
+        } 
+        .footer-center{
+            width: 940px;
+        }
+        .footer-bottom{
+            width: 940px;
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    footer{
+        .footer-top{
+            width: 1140px;
+        } 
+        .footer-center{
+            width: 1140px;
+        }
+        .footer-bottom{
+            width: 1140px;
+        }
+    }
+}
+.chat{
+    text-decoration: none;
+    color: typography.$colorWhite;
+    background-color: #00439c;
+    width: 100%;
+    height: max-content;
+    padding: 1em 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    text-align: center;
+    cursor: pointer;
+}
+.chat:hover{
+    color: typography.$colorWhite;
+    background-color: #002f6c;
+}
+
+@media (min-width: 768px){
+    .chat{
+        width: max-content;
+        right: 20px;
+    }
+}
