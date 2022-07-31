@@ -203,10 +203,12 @@ header .main-nav .ul-1 .li-1-2 .ul-2-2 .li-2-2:hover {
     display: block;
     background-color: #363636;
     height: fit-content;
+    position: relative;
   }
   header .main-nav .ul-1 {
     display: flex;
     gap: 30px;
+    padding: 5px 0px;
   }
   header .main-nav .ul-1 .li-1 a {
     color: #FFFFFF;
@@ -223,8 +225,33 @@ header .main-nav .ul-1 .li-1-2 .ul-2-2 .li-2-2:hover {
   header .main-nav .ul-1 .li-1 .list-top-2 .menu-dropdown-2 .menu-arrow-2 {
     border-color: #FFFFFF;
   }
-  header .main-nav .ul-1 .li-1:last-of-type {
-    display: none;
+  header .main-nav .ul-1 .li-1-1, header .main-nav .ul-1 .li-1-2 {
+    position: unset;
+  }
+  header .main-nav .ul-1 .li-1-1 .ul-2, header .main-nav .ul-1 .li-1-1 .ul-2-2, header .main-nav .ul-1 .li-1-2 .ul-2, header .main-nav .ul-1 .li-1-2 .ul-2-2 {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    flex-wrap: wrap;
+    padding: 40px 0px 40px 50px;
+    font-size: 15px;
+  }
+  header .main-nav .ul-1 .li-1-1 .ul-2 a, header .main-nav .ul-1 .li-1-1 .ul-2-2 a, header .main-nav .ul-1 .li-1-2 .ul-2 a, header .main-nav .ul-1 .li-1-2 .ul-2-2 a {
+    height: max-content;
+  }
+  header .main-nav .ul-1 .li-1-1 .ul-2 .li-2, header .main-nav .ul-1 .li-1-1 .ul-2 .li-2-2, header .main-nav .ul-1 .li-1-1 .ul-2-2 .li-2, header .main-nav .ul-1 .li-1-1 .ul-2-2 .li-2-2, header .main-nav .ul-1 .li-1-2 .ul-2 .li-2, header .main-nav .ul-1 .li-1-2 .ul-2 .li-2-2, header .main-nav .ul-1 .li-1-2 .ul-2-2 .li-2, header .main-nav .ul-1 .li-1-2 .ul-2-2 .li-2-2 {
+    flex: 300px;
+    padding: 2px 0px;
+  }
+  header .main-nav .ul-1 .li-1-1 .ul-2 .li-2:hover, header .main-nav .ul-1 .li-1-1 .ul-2 .li-2-2:hover, header .main-nav .ul-1 .li-1-1 .ul-2-2 .li-2:hover, header .main-nav .ul-1 .li-1-1 .ul-2-2 .li-2-2:hover, header .main-nav .ul-1 .li-1-2 .ul-2 .li-2:hover, header .main-nav .ul-1 .li-1-2 .ul-2 .li-2-2:hover, header .main-nav .ul-1 .li-1-2 .ul-2-2 .li-2:hover, header .main-nav .ul-1 .li-1-2 .ul-2-2 .li-2-2:hover {
+    text-decoration: none;
+  }
+  header .main-nav .ul-1 .li-1-1:hover .ul-2, header .main-nav .ul-1 .li-1-2:hover > .ul-2-2 {
+    display: flex;
+  }
+  header .main-nav .ul-1 .li-1-1:hover .list-top-1 > .menu-dropdown-1,
+header .main-nav .ul-1 .li-1-2:hover .list-top-2 > .menu-dropdown-2 {
+    transform: rotate(180deg);
   }
 }
 section {

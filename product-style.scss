@@ -8,6 +8,8 @@ body {
     overflow-x: hidden;
 }
 
+//---------------HEADER----------------------
+
 header{
     width: 100%;
     .header-top{
@@ -33,7 +35,7 @@ header{
             img{
                 height: 36px;
             }
-        }
+        }                                       //----NAV MOBILE--------
         .nav-mobile{
             display: flex;
             justify-content: space-between;
@@ -70,7 +72,7 @@ header{
             }
         }
     }
-
+                                        //-----MAIN NAV-----
     .main-nav{
         background-color: #eeeeee;
         display: none;              //compare cliccando sul bottone
@@ -78,7 +80,6 @@ header{
             list-style-type: none;
             padding-left: 0px;
             a{
-                
                 text-decoration: none;
                 color: typography.$colorBlack;
                 padding-left: 10px;
@@ -180,6 +181,8 @@ header{
     }
 }
 
+    //------media-----
+
 @media(min-width: 992px){
     header{
         .header-div-logo{
@@ -215,9 +218,11 @@ header{
             display: block;        
             background-color: #363636;
             height: fit-content;
+            position: relative;
             .ul-1{
                 display: flex;
                 gap: 30px;
+                padding: 5px 0px;
                 .li-1{
                     a {
                         color: typography.$colorWhite;
@@ -231,6 +236,7 @@ header{
                         }
                        
                     }
+                    
                     .list-top-2{
                         .menu-dropdown-2{
                             background-color: #363636;
@@ -240,14 +246,42 @@ header{
                         }
                     }
                 }
-
-                .li-1:last-of-type{
-                    display: none;
+                                
+                .li-1-1, .li-1-2{
+                    position: unset;
+                    .ul-2, .ul-2-2{
+                        position: absolute;
+                        left: 0;
+                        z-index: 3;
+                        flex-wrap: wrap;
+                        padding: 40px 0px 40px 50px;
+                        font-size: 15px;
+                        a{
+                            height: max-content;
+                        }
+                        .li-2, .li-2-2{
+                            flex: 300px;
+                            padding: 2px 0px;
+                        }
+                        .li-2:hover, .li-2-2:hover{
+                            text-decoration: none;
+                        }
+                    }
+                    
+                }
+                .li-1-1:hover .ul-2, .li-1-2:hover>.ul-2-2{
+                    display: flex;
+                }
+                .li-1-1:hover .list-top-1>.menu-dropdown-1,
+                .li-1-2:hover .list-top-2>.menu-dropdown-2{
+                    transform: rotate(180deg);
                 }
             }
         }
     }
 }
+
+// ---------------FINE HEADER---------------------------
 
 // --------------SEZIONE PRODOTTO----------------------------
 section{
@@ -629,3 +663,7 @@ section{
 }
 
 //----------------FINE SEZIONE---------------------------
+
+// -------------FOOTER----------------------
+
+
