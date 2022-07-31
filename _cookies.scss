@@ -1,0 +1,75 @@
+@use "typography";
+#cookies-section{
+    width: 100%;
+    height: fit-content;
+    background-color: typography.$colorCookies;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 40px;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    .logo-cookies{
+        width: 50px;
+        height: 50px;
+    }
+    .cookies-text, .cookies-text>a{
+        color: typography.$colorWhite;
+    }
+
+    .cookies-Button{
+        align-self: center;
+        padding: 2px;
+        border-radius: 2rem;
+        transition-duration: 0.3s;
+        width: fit-content;
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            div {
+                width: fit-content;
+                border-radius: 2rem;
+                border: 2px solid transparent;
+                padding: 4px 14px;
+                font-weight: 700;
+                color: typography.$colorWhite;
+                background-color: typography.$colorBlack;
+            }
+        }
+        &:hover{
+            background-color: typography.$colorBlack;
+            & div{
+                border-color:  typography.$colorCookies;
+            }
+        }
+    }
+
+    .cookies-Button:nth-of-type(3){
+        a>div{
+            color: typography.$colorBlack;
+            background-color: typography.$colorWhite;
+        }
+        &:hover{
+        background-color: typography.$colorWhite;
+        
+            & div{
+                border-color:  typography.$colorCookies;
+            }
+        }
+    }
+}
+
+.close-tab{
+    background-color: transparent;
+    border: none;
+    color: typography.$colorWhite;
+    font-weight: 200;
+    position: absolute;
+    top: 0;
+    right: 0;
+    img{
+        width: 15px;
+        height: 15px; 
+    }
+}
