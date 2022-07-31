@@ -246,7 +246,8 @@ header{
                         }
                     }
                 }
-                                
+                          
+                
                 .li-1-1, .li-1-2{
                     position: unset;
                     .ul-2, .ul-2-2{
@@ -262,7 +263,7 @@ header{
                         .li-2, .li-2-2{
                             flex: 300px;
                             padding: 2px 0px;
-                            list-style-type: none;
+                            background-color: yellow;
                         }
                         .li-2:hover, .li-2-2:hover{
                             text-decoration: none;
