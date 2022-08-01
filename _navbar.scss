@@ -1,0 +1,210 @@
+@use "typography";
+
+
+.fs-nav-link {
+  font-size: 18px;
+}
+
+.fw-nav-link {
+  font-weight: 500;
+}
+
+.fs-nav-footer-link {
+  font-size: 17px;
+}
+
+.nav-footer-link {
+  color: black;
+
+  &:hover {
+    color: #2d64e6;
+  }
+}
+
+.nav-link:hover,
+.fa-angle-down:hover {
+  color: #2d64e6 !important;
+}
+
+.nav-icon-shadow {
+  text-decoration: none;
+  width: 160px;
+  height: 120px;
+  color: black;
+  margin: 5px;
+
+  &:hover {
+    box-shadow: rgba(128, 128, 128, 0.692) 1px 1px 5px 1px;
+    width: 160px;
+    height: 120px;
+    border-radius: 4px;
+    color: black;
+  }
+}
+
+
+
+.li-circle-blue {
+  list-style-type: none;
+
+}
+
+
+.li-circle-blue::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: typography.$colorBlue;
+  margin-right: 5px;
+  font-size: 1rem;
+
+}
+
+.mnavcontent {
+  margin-top: -1px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.247) 0px 10px 10px 0px;
+}
+
+.btn-search:hover {
+  border: 1px solid black !important;
+}
+
+.fa-angle-down {
+  color: gray;
+}
+
+.navbartransition {
+  animation: navbartransition 600ms;
+  transform-origin: top center;
+}
+
+.accedi-btn {
+  background-color: #363636;
+  color: white;
+  border-style: none;
+  height: fit-content;
+  width: 100px;
+  border-radius: 100px;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+.sony-bar {
+  background-color: black;
+  height: 36px;
+  width: 100%;
+  position: relative;
+}
+
+.logo-sony {
+  color: white;
+  float: right;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.fixed-nav {
+  position: fixed !important;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+}
+
+.navbar {
+  padding: 0 !important;
+  height: 65px !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  color: black !important;
+}
+
+.bars-menu {
+  display: none;
+}
+
+.dropdown-menu {
+  position: absolute !important;
+  z-index: 1000 !important;
+}
+
+
+
+@keyframes navbartransition {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+
+
+@media (max-width: 1600px) {
+  .nav-link {
+    font-size: 13px !important;
+  }
+
+  .fa-angle-down {
+    margin-right: 5px;
+  }
+
+  .fw-nav-link {
+    font-weight: 200;
+  }
+
+  .accedi-btn {
+    height: fit-content;
+    width: 80px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  #navbar{
+    display: none;
+  }
+  .bars-menu {
+    display: block;
+   
+  }
+.sony-bar{
+  display: none;
+}
+  .hamburger-link {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .search-mobile{
+    border: 1px solid black;
+  }
+.container-flex-mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+}

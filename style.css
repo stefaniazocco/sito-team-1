@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./font/stylesheet.css);
 footer {
   background-color: #00439C;
@@ -180,6 +181,456 @@ footer > div > ul {
   height: 15px;
 }
 
+.fs-nav-link {
+  font-size: 18px;
+}
+
+.fw-nav-link {
+  font-weight: 500;
+}
+
+.fs-nav-footer-link {
+  font-size: 17px;
+}
+
+.nav-footer-link {
+  color: black;
+}
+.nav-footer-link:hover {
+  color: #2d64e6;
+}
+
+.nav-link:hover,
+.fa-angle-down:hover {
+  color: #2d64e6 !important;
+}
+
+.nav-icon-shadow {
+  text-decoration: none;
+  width: 160px;
+  height: 120px;
+  color: black;
+  margin: 5px;
+}
+.nav-icon-shadow:hover {
+  box-shadow: rgba(128, 128, 128, 0.692) 1px 1px 5px 1px;
+  width: 160px;
+  height: 120px;
+  border-radius: 4px;
+  color: black;
+}
+
+.li-circle-blue {
+  list-style-type: none;
+}
+
+.li-circle-blue::before {
+  content: "•";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #2d64e6;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.mnavcontent {
+  margin-top: -1px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.247) 0px 10px 10px 0px;
+}
+
+.btn-search:hover {
+  border: 1px solid black !important;
+}
+
+.fa-angle-down {
+  color: gray;
+}
+
+.navbartransition {
+  animation: navbartransition 600ms;
+  transform-origin: top center;
+}
+
+.accedi-btn {
+  background-color: #363636;
+  color: white;
+  border-style: none;
+  height: fit-content;
+  width: 100px;
+  border-radius: 100px;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+.accedi-btn:hover {
+  opacity: 0.8;
+}
+
+.sony-bar {
+  background-color: black;
+  height: 36px;
+  width: 100%;
+  position: relative;
+}
+
+.logo-sony {
+  color: white;
+  float: right;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.fixed-nav {
+  position: fixed !important;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+}
+
+.navbar {
+  padding: 0 !important;
+  height: 65px !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  color: black !important;
+}
+
+.bars-menu {
+  display: none;
+}
+
+.dropdown-menu {
+  position: absolute !important;
+  z-index: 1000 !important;
+}
+
+@keyframes navbartransition {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@media (max-width: 1600px) {
+  .nav-link {
+    font-size: 13px !important;
+  }
+  .fa-angle-down {
+    margin-right: 5px;
+  }
+  .fw-nav-link {
+    font-weight: 200;
+  }
+  .accedi-btn {
+    height: fit-content;
+    width: 80px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  #navbar {
+    display: none;
+  }
+  .bars-menu {
+    display: block;
+  }
+  .sony-bar {
+    display: none;
+  }
+  .hamburger-link {
+    text-decoration: none;
+    color: black;
+  }
+  .hamburger-link:hover {
+    color: black;
+  }
+  .search-mobile {
+    border: 1px solid black;
+  }
+  .container-flex-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 1000vw;
+  position: relative;
+  margin: 0;
+}
+
+.mySlides {
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+.mySlides .responsive {
+  max-width: 100%;
+  height: auto;
+}
+.mySlides .text {
+  color: #f2f2f2;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  width: 100%;
+  font-size: 18px;
+  width: 35%;
+}
+.mySlides .text .title-slider {
+  font-size: 35px;
+  font-weight: 200;
+}
+.mySlides .text .content-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mySlides .text .content-text .description-slider {
+  font-weight: 400;
+}
+
+.container-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.container-btn .slider-btn-orange {
+  background-color: #cd3d0f;
+  border: #cd3d0f;
+  color: white;
+  height: 40px;
+  width: fit-content;
+  border-radius: 100px;
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+  position: absolute;
+}
+.container-btn .slider-btn-orange:hover {
+  opacity: 0.8;
+}
+.container-btn .slider-btn-white {
+  background-color: white;
+  border: white;
+  color: black;
+  height: 40px;
+  width: fit-content;
+  border-radius: 100px;
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+  position: absolute;
+}
+.container-btn .slider-btn-white:hover {
+  opacity: 0.8;
+}
+
+.container-preview-hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 150px;
+}
+.container-preview-hero .dot {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.container-preview-hero .dot:hover {
+  transform: translateY(-10px);
+  opacity: 1;
+}
+.container-preview-hero .preview-hero-img {
+  border-radius: 10px;
+  margin: 5px;
+  width: 250px;
+}
+
+.active {
+  border: 3px solid #2d64e6;
+  border-radius: 10px;
+  opacity: 1 !important;
+}
+.active:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(187, 187, 187, 0.863) 0px 15px 10px 0px;
+}
+
+/* animation */
+.fade {
+  background: linear-gradient(top to right, rgb(59, 59, 59), white, black);
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+.bouncetext {
+  animation-name: bouncetext;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+@keyframes bouncetext {
+  from {
+    transform: translateY(50px);
+    opacity: 0.1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 1024px) {
+  .w-100 {
+    height: 100%;
+  }
+  .text {
+    color: #f2f2f2;
+    position: relative;
+    bottom: 15%;
+    left: 5%;
+    width: 100%;
+    font-size: 18px;
+    width: 35%;
+  }
+  .text .content-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text .content-text .title-slider {
+    font-size: 22px !important;
+    font-weight: 200;
+  }
+  .text .content-text .description-slider {
+    font-size: 15px !important;
+    font-weight: 400;
+  }
+  .container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .container-btn .slider-btn-orange {
+    background-color: #cd3d0f;
+    border: #cd3d0f;
+    color: white;
+    height: 25px;
+    width: fit-content;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    position: absolute;
+  }
+  .container-btn .slider-btn-orange:hover {
+    opacity: 0.8;
+  }
+  .container-btn .slider-btn-white {
+    background-color: white;
+    border: white;
+    color: black;
+    height: 25px;
+    width: fit-content;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    position: absolute;
+  }
+  .container-btn .slider-btn-white:hover {
+    opacity: 0.8;
+  }
+}
+@media (max-width: 768px) {
+  .w-100 {
+    height: 100%;
+  }
+  .text {
+    color: #f2f2f2;
+    position: relative;
+    text-align: center;
+    bottom: 0px !important;
+    left: 0% !important;
+    width: 100% !important;
+  }
+  .text .content-text {
+    text-align: center;
+  }
+  .text .content-text .title-slider {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+  }
+  .text .content-sub .description-slider {
+    font-size: 14px !important;
+    font-weight: 200 !important;
+  }
+  .container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-btn .slider-btn-orange {
+    color: white;
+    height: 25px;
+    width: fit-content;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    position: absolute;
+  }
+  .container-btn .slider-btn-orange:hover {
+    opacity: 0.8;
+  }
+  .container-btn .slider-btn-white {
+    background-color: white;
+    border: white;
+    color: black;
+    height: 25px;
+    width: fit-content;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    position: absolute;
+  }
+  .container-btn .slider-btn-white:hover {
+    opacity: 0.8;
+  }
+  .accedi-btn {
+    display: block;
+  }
+  .content-sub {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    background-color: black;
+    height: 150px;
+  }
+}
 body {
   color: #1F1F1F;
   box-sizing: border-box;
