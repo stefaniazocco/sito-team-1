@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+
+@import url(./font/stylesheet.css);
+
 .container-nuove-uscite {
 
     display: grid;
@@ -10,9 +13,26 @@
     grid-template-rows: repeat (2, 1fr);
     gap: 20px;
     background-color: black;
+    color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding: 10px 0px 0px 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 
+
+}
+
+.titles-container-nuove-uscite {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 10px 0px 0px 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container-nuove-uscite>div>img {
@@ -20,17 +40,74 @@
     width: 175px;
     height: 175px;
 }
- 
+
 .elden-ring {
-
+    height: 100%;
     width: 100%;
-   
-} 
+    position: relative;
+    top: 4px;
+}
 
-h2, p {
+.box-text-img {
+
+    color: white;
+    position: absolute;
+    bottom: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 75px;
+}
+
+.h1-elden {
+    padding: 15px;
+}
+
+.p-elden {
+
+    padding: 15px;
+    padding-bottom: 35px;
+}
+
+button {
+    
+    border-radius: 2rem;
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+}
+
+.arrow {
+
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    width: 30px;
+}
+/* .text-img {
+    color: white;
+    position: absolute;
+
+} */
+
+/* .titles-container-nuove-uscite>h3>
+h5>
+p {
     padding: 10px 0px 0px 10px;
     color: white;
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+h3 {
+    font-size: 18.72px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
 }
 
 .game-1 {
