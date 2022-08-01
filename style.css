@@ -462,5 +462,392 @@ body {
   }
 }
 /*----------------------------------------------*/
+/*----------------ESPLORA PLAY------------------*/
+.first_cont .layout .first_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_cont .carousel {
+  display: flex;
+  flex-direction: row;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.first_cont {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+.first_cont .layout {
+  width: 100%;
+  padding: 48px 0px 0px 0px;
+}
+.first_cont .layout .first_block {
+  flex-direction: column;
+  height: 10em;
+  width: 100%;
+}
+.first_cont .layout .first_block .title {
+  font-size: 45px;
+  color: #1F1F1F;
+  font-weight: lighter;
+}
+.first_cont .layout .first_block .sub {
+  color: #727171;
+  font-size: 22px;
+  margin: 16px 0px 0px 0px;
+  width: 53%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.second_cont {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.second_cont .carousel .content1 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.second_cont .carousel .content1 .play_picture {
+  height: 260px;
+  width: 450px;
+}
+.second_cont .carousel .content1 .play_picture img {
+  height: 250px;
+  width: 450px;
+}
+.second_cont .carousel .content1 .text_box {
+  width: 450px;
+}
+.second_cont .carousel .content1 .text_box #title1 {
+  font-size: 45px;
+  color: #1F1F1F;
+  font-weight: lighter;
+}
+.second_cont .carousel .content1 .text_box #sub1 {
+  color: #727171;
+  font-size: 22px;
+  margin: 16px 0px 0px 0px;
+  font-weight: 400;
+}
+.second_cont .carousel .content1 .btn-block {
+  padding-top: 32px;
+}
+.second_cont .carousel .content1 .btn-block .btn {
+  align-self: center;
+  padding: 2px;
+  border-radius: 2rem;
+  transition-duration: 0.3s;
+  width: fit-content;
+  border: none;
+}
+.second_cont .carousel .content1 .btn-block .btn .btn-link {
+  text-decoration: none;
+  font-size: 18px;
+  width: fit-content;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  padding: 11px 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #2d64e6;
+}
+.second_cont .carousel .content2 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.second_cont .carousel .content2 .play_vr {
+  height: 260px;
+  width: 450px;
+}
+.second_cont .carousel .content2 .play_vr img {
+  height: 260px;
+  width: 450px;
+}
+.second_cont .carousel .content2 .text_box {
+  width: 450px;
+}
+.second_cont .carousel .content2 .text_box #title2 {
+  font-size: 45px;
+  color: #1F1F1F;
+  font-weight: lighter;
+}
+.second_cont .carousel .content2 .text_box #sub2 {
+  color: #727171;
+  font-size: 22px;
+  margin: 16px 0px 0px 0px;
+  font-weight: 400;
+}
+.second_cont .carousel .content2 .btn-block {
+  padding-top: 32px;
+}
+.second_cont .carousel .content2 .btn-block .btn {
+  align-self: center;
+  padding: 2px;
+  border-radius: 2rem;
+  transition-duration: 0.3s;
+  width: fit-content;
+  border: none;
+}
+.second_cont .carousel .content2 .btn-block .btn .btn-link {
+  text-decoration: none;
+  font-size: 18px;
+  width: fit-content;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  padding: 11px 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #2d64e6;
+}
+.second_cont .carousel .content3 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.second_cont .carousel .content3 .accessori {
+  height: 260px;
+  width: 450px;
+}
+.second_cont .carousel .content3 .accessori img {
+  height: 260px;
+  width: 450px;
+}
+.second_cont .carousel .content3 .text_box {
+  width: 450px;
+}
+.second_cont .carousel .content3 .text_box #title3 {
+  font-size: 45px;
+  color: #1F1F1F;
+  font-weight: lighter;
+}
+.second_cont .carousel .content3 .text_box #sub3 {
+  color: #727171;
+  font-size: 22px;
+  margin: 16px 0px 0px 0px;
+  font-weight: 400;
+}
+.second_cont .carousel .content3 .btn-block {
+  padding-top: 32px;
+}
+.second_cont .carousel .content3 .btn-block .btn {
+  align-self: center;
+  padding: 2px;
+  border-radius: 2rem;
+  transition-duration: 0.3s;
+  width: fit-content;
+  border: none;
+}
+.second_cont .carousel .content3 .btn-block .btn .btn-link {
+  text-decoration: none;
+  font-size: 18px;
+  width: fit-content;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  padding: 11px 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #2d64e6;
+}
+
+/*---------------FINE ESPLORA PLAY----------------*/
+/*---------------PLAY PLUS------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+  margin: 0;
+  height: 620px;
+}
+.section .bg-section {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.section .bg-section .bg-image {
+  width: 100%;
+  height: 620px;
+}
+.section .contentgrid {
+  display: grid;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  z-index: 1;
+  width: 80%;
+  height: 620px;
+  margin: 0px 0px 0px 200px;
+}
+.section .contentgrid .imageblock {
+  grid-area: 1/2;
+  width: 580px;
+  height: 510px;
+}
+.section .contentgrid .imageblock #games {
+  width: 580px;
+  height: 510px;
+}
+.section .contentgrid .box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: 1/1;
+  width: 580px;
+  height: 400px;
+  padding: 40px;
+}
+.section .contentgrid .box-title .title-block {
+  width: 630px;
+  height: 90px;
+  margin-bottom: 40px;
+}
+.section .contentgrid .box-title .title-block .playlogo {
+  width: 450px;
+  height: 90px;
+}
+.section .contentgrid .box-title .text {
+  width: 630px;
+  margin-bottom: 10px;
+}
+.section .contentgrid .box-title .text .paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1F1F1F;
+}
+.section .contentgrid .box-title .btn-block .btn {
+  align-self: center;
+  padding: 0px;
+  border-radius: 2rem;
+  transition-duration: 0.3s;
+  width: fit-content;
+  border: none;
+  margin: 13px 0px 0px 0px;
+  background-color: none;
+}
+.section .contentgrid .box-title .btn-block .btn .btn-link {
+  text-decoration: none;
+  font-size: 18px;
+  width: fit-content;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  padding: 11px 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #2d64e6;
+}
+
+/*--------------FINE PLAY PLUS-----------------*/
+/*--------------SCONTI PLAY--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cont {
+  width: 100%;
+  height: 690px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.cont .grid-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 550px;
+  width: 90%;
+  margin: 0;
+  margin-left: 206px;
+  margin-right: 106px;
+}
+.cont .grid-cont .picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 550px;
+  grid-area: 1/2;
+  margin-right: 50px;
+}
+.cont .grid-cont .picture #sales {
+  height: 550px;
+  width: 1000px;
+}
+.cont .grid-cont .text-cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: 1/1;
+  width: 480px;
+  height: 600px;
+}
+.cont .grid-cont .text-cont .text-block {
+  width: 350px;
+  margin-bottom: 10px;
+}
+.cont .grid-cont .text-cont .text-block .title-sales {
+  font-size: 44px;
+  font-weight: lighter;
+  color: #1F1F1F;
+  margin-bottom: 10px;
+}
+.cont .grid-cont .text-cont .subtitle {
+  width: 475px;
+}
+.cont .grid-cont .text-cont .subtitle .sub-sales {
+  line-height: 36px;
+  font-size: 23px;
+  font-weight: 400;
+  color: #727171;
+}
+.cont .grid-cont .text-cont .btn-block {
+  margin: 12px 0px 0px 0px;
+}
+.cont .grid-cont .text-cont .btn-block .btn {
+  align-self: center;
+  padding: 0px;
+  border-radius: 2rem;
+  transition-duration: 0.3s;
+  width: fit-content;
+  border: none;
+  margin: 12px 0px 0px 0px;
+  background-color: none;
+}
+.cont .grid-cont .text-cont .btn-block .btn .btn-link {
+  text-decoration: none;
+  font-size: 18px;
+  width: fit-content;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  padding: 11px 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #2d64e6;
+}
+
+/*---------------FINE SCONTI PLAY-----------------*/
 
 /*# sourceMappingURL=style.css.map */
