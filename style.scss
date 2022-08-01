@@ -1,6 +1,8 @@
 @use "typography"; // ricordarsi di usare typography.$variabile
 @use "footer";
 @use "cookies";
+@use "navbar";
+@use "slider";
 
 body {
     color: typography.$colorBlack;
