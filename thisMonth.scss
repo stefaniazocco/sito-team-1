@@ -1,0 +1,106 @@
+@use "typography";  // ricordarsi di usare typography.$variabile
+
+body {
+    color: typography.$colorBlack;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+/* This Month Playstation*/
+
+.containerMaster{
+    margin-top: 5rem;
+  }
+  
+  .TM-Master-Left{
+    position: absolute;
+    margin-left: 13rem;
+    margin-top: 5rem;
+  }
+  .TMtitle{
+    font-weight: 300;
+    color: typography.$colorWhite;
+  }
+  .TMsbtitl{
+    font-weight: 500;
+    color: typography.$colorWhite;
+  }
+  .TMprg{
+    font-weight: 400;
+    opacity: .6;
+    line-height: 1.5em;
+    font-size: calc(1rem*1.25);
+    margin-bottom: 1.5rem;
+    color: typography.$colorWhite;
+  }
+  .TM-Button{
+    align-self: center;
+    padding: 2px;
+    border-radius: 2rem;
+    transition-duration: 0.3s;
+    width: fit-content;
+    a{
+        text-decoration: none;
+        font-size: 16px;
+        .TM-button {
+            width: fit-content;
+            border-radius: 2rem;
+            border: 2px solid transparent;
+            padding: 4px 14px;
+            font-weight: 600;
+            color: typography.$colorBlack;
+            background-color: typography.$colorWhite;
+        }
+    }
+    &:hover{
+        background-color: typography.$colorWhite;
+        
+        & .thisMonth-button{
+            border-color:  typography.$colorBlack;
+            }
+    }
+  }
+  
+  .sectionTM-img{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+   }
+  
+   .containerMasterCards{
+    background-color: #26254f;
+    position: relative;
+    min-height: 150px;
+    color: #fff;
+   }
+   .wrapperContent{
+      top: -288px;
+   }
+  
+   .flex-containerTM{
+    width: 100%;
+   }
+  
+   .TMIcon{
+    border-radius: 20px;
+    margin: 0%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    &:hover{
+      -ms-transform: scale(.6); /* IE 9 */
+      -webkit-transform: scale(.6); /* Safari 3-8 */
+      transform: scale(1.02);  
+      box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      /* transition: all .2s ease-in-out; */
+      transition: transform 0.5s, filter 1s ease-in-out;
+      filter: blur(0.5px);
+    }
+   }
+  .prgTM{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  

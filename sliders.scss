@@ -1,0 +1,154 @@
+@use "typography";  // ricordarsi di usare typography.$variabile
+
+body {
+    color: typography.$colorBlack;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+// SECTION MARCO PS5 CONSOLE
+.container-items-ps5{
+  justify-content: center;
+  gap: 2rem;
+}
+.item-Sn-ps5{
+  width: 25%;
+}
+.consoleTitle{
+  font-weight: 300;
+  font-size: calc(1rem*1.95312);
+  margin-bottom: 1.5rem;
+}
+.subtitleConosle{
+  font-weight: 400;
+  opacity: .7;
+  line-height: 1.5em;
+  font-size: calc(1rem*1.25);
+  margin-bottom: 1.5rem;
+}
+// BUTTONS RED
+.ps5-Button-red{
+  align-self: center;
+  padding: 2px;
+  border-radius: 2rem;
+  transition-duration: 0.3s;
+  width: fit-content;
+  display: inline-block;
+  a{
+      text-decoration: none;
+      .ps5-button-Red{
+          width: fit-content;
+          border-radius: 2rem;
+          border: 2px solid transparent;
+          padding: 10px 14px;
+          font-weight: 600;
+          color: typography.$colorWhite;
+          background-color: typography.$colorRed;
+      }
+  }
+  &:hover{
+      background-color: typography.$colorBlue;
+      
+      & .ps5-button-Red{
+          border-color:  typography.$colorWhite;
+      }
+  }
+}
+// BUTTONS BLUE
+.ps5-Button{
+  align-self: center;
+  padding: 2px;
+  border-radius: 2rem;
+  transition-duration: 0.3s;
+  width: fit-content;
+  display: inline-block;
+  a{
+  text-decoration: none;
+  .ps5-button{
+      width: fit-content;
+      border-radius: 2rem;
+      border: 2px solid transparent;
+      padding: 10px 14px;
+      font-weight: 600;
+      color: typography.$colorWhite;
+      background-color: typography.$colorBlue;
+  }
+}
+  &:hover{
+  background-color: typography.$colorBlue;
+  
+  & .ps5-button{
+      border-color:  typography.$colorWhite;
+  }
+}
+}
+
+.item-Dx-ps5{
+  width: 50%;
+}
+.PS5Console{
+  text-align: center;
+  display: inline-block;
+}
+
+.PS5Icon1{
+  margin-bottom: 2rem;
+ }
+ .PS5Icon2{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+ }
+ .prgfPS-5DWS{
+  text-align: center;
+  justify-content: center;
+  width: 150px;
+  margin-left: 2rem;
+ }
+ .prgfPS5-PS3DWH{
+  text-align: center;
+ }
+ /* .prgfPS5{
+  text-align: center;
+  display: inline-block;
+ } */
+ .prgfPS5-PSC{
+  text-align: center;
+  margin-left: -2rem;
+ }
+ .prgfPS5-MR{
+  text-align: center;
+  margin-left: -2rem;
+ }
+ .prgfPS5-D1{
+  margin-left: -0.5rem;
+  text-align: center;
+ }
+ .PS5Icon-C{
+  margin-top: 1.5rem;
+}
+.prgfPS5-CC{
+  text-align: center;
+}
+
+ .containerIcons{
+  margin: 2rem 13rem;
+  /* gap: 3.5rem; */
+  cursor: pointer;
+  :hover{
+    opacity: 1;
+  }
+ }
+
+ .blockIconPs5{
+  position: relative;
+  font-size: 16px;
+ }
+ .imgOpacity{
+  opacity: 0.7;
+  filter: alpha(opacity=40);
+  &.imgOpacity:hover{
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    transition: all .2s ease-in-out;
+   }
+ }
