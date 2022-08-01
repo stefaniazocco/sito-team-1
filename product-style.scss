@@ -850,3 +850,32 @@ footer{
         right: 20px;
     }
 }
+.go-to-top{
+    background-color:  #1a6ad8;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 0px;
+    position: fixed;
+    z-index: 6;
+    top: 50%;
+    bottom: 50%;
+    right: 20px;
+    a{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;        
+        div{
+            border: solid typography.$colorWhite;
+            border-width: 0 2px 2px 0;
+            transform: rotate(-135deg);
+            width: 10px;
+            height: 10px;
+            margin-left: 9px;
+            margin-top: 2px;
+        }
+    }
+}
+
+
+
