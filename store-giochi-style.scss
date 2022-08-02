@@ -1,1 +1,12 @@
+@use "typography"; // ricordarsi di usare typography.$variabile
+
+body {
+    color: typography.$colorBlack;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    font-family: "SST";
+    overflow-x: hidden;
+}
+
 // compilare in sass store-giochi-style.scss store-giochi-style.css
